@@ -5,21 +5,66 @@
         <title>Bicycle</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:300,regular,italic,700" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/app-dist.js"></script>
+        <script src="js/app-dist.js" defer></script>
     </head>
     <body>
         <div class="wrapper">
             <main class="page">
 <header class="header">
-    <div class="header__container">
-        
+    <div class="header__row">
+        <nav class="header__menu menu">
+            <div class="menu__icon icon-menu">
+                <span></span>
+            </div>
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__link">about us</a></li>
+                    <li><a href="#" class="menu__link">work</a></li>
+                    <li><a href="#" class="menu__link">shop</a></li>
+                    <li><a href="#" class="menu__link">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__logo"><img src="image/menu/Logo.svg" alt="Logo"></div>
     </div>
 </header>                <div class="full-screen">
                     <div class="full-screen__bg _ibg">
                         <img class="full-screen__bg" src="image/main/top/bg.jpg" alt="bg">
                     </div>
                 </div>
-                <div class="content"></div>
+                <div class="content">
+                    <section class="generation">
+                        <div class="container">
+                            <div class="generation__block-text block-text">
+                                <div class="block-text__icon"><img src="/image/main/about/Icon.svg" alt="icon"></div>
+                                <h1 class="block-text__title">A NEW GENERATION OF VINTAGE BIKE</h1>
+                                <p class="block-text__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company">
+                        <div class="company__row">
+                            <div class="company__column company__column_big">
+                                <a href="#" class="company__item item-company">
+                                    <span class="item-company__image"><img src="../image/main/oliva/Logo.svg" alt="Icon"></span>
+                                    <span class="item-company__icon"><img src="../image/main/oliva/bike-1.jpg" alt="Bike-1"></span>
+                                </a>
+                            </div>
+                            <div class="company__column">
+                                <div class="company__block-text block-text">
+                                    <div class="block-text__icon"><img src="/image/main/oliva/Icon.svg" alt="icon"></div>
+                                    <h1 class="block-text__title">vintage Oliva</h1>
+                                    <p class="block-text__text block-text__text_justify">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
+                                    </p>
+                                </div>
+                                <div class="company__image"><img src="image/main/oliva/bike-2.jpg" alt="bike-2"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 <footer class="footer">
     <div class="footer__container">
         

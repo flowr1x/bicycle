@@ -1,0 +1,33 @@
+.generation {
+    padding: 117px 0 130px 0;
+    @media (max-width: 48em) {
+        & {
+            padding: 50px 0;
+        }
+    }
+}
+.block-text {
+    text-align: center;
+    font-size: 1.125rem;
+    &__icon {
+        // Apaptive
+        margin: 0 0 2.25em 0;
+    }
+    &__title {
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #353738;
+        margin: 0 0 1.12em 0;
+    }
+    &__text {
+        line-height: 2;
+        color: #848789;
+    }
+    @media (max-width: 48em) {
+        & {
+            font-size: 1rem;
+        }
+    }
+}

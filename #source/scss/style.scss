@@ -1,6 +1,10 @@
 @import "normalize.scss";
+@import "variables.scss";
 
 // Main config
+body._active{
+    overflow: hidden;
+}
 .wrapper {
     overflow: hidden;
     min-height: 100%;
@@ -24,7 +28,7 @@
     }
 }
 // ============================================================================================
-
+@import "header/header.scss";
 // Page
 .page {
     position: absolute;
@@ -34,6 +38,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    z-index: var(--layout-2);
 }
 .full-screen {
     flex: 1 0 100%;
@@ -46,6 +51,9 @@
         height: 100%;
     }
 }
+
+// Content
 .content {
 }
 // ============================================================================================
+@import "content/generation/generation.scss";

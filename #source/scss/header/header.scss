@@ -1,0 +1,30 @@
+@import "header__menu/header__menu.scss";
+
+.header {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    z-index: var(--layout-2);
+    
+    &__row {
+        padding: 0 15px;
+        min-height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 48em) {
+            & {
+                justify-content: flex-end;
+            }
+        }
+    }
+    &__menu {}
+    &__logo {
+        position: absolute;
+        z-index: var(--layout-2);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
