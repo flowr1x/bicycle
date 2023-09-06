@@ -1,4 +1,5 @@
 .generation {
+    background-color: #f7f7f7;
     padding: 117px 0 130px 0;
     @media (max-width: 48em) {
         & {
@@ -9,6 +10,7 @@
 .block-text {
     text-align: center;
     font-size: 1.125rem;
+    position: relative;
     &__icon {
         // Apaptive
         margin: 0 0 2.25em 0;
@@ -24,6 +26,30 @@
     &__text {
         line-height: 2;
         color: #848789;
+        &_justify {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.875;
+            &::after {
+                content: "";
+                display: block;
+                background-color: #d7d7d7;
+                height: 1px;
+                width: 50px;
+                margin: 35px auto 0 auto;
+            }
+        }
+    }
+    &_arrow-down::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 99%);
+        border-top: 13px solid #fff;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        z-index: var(--layout-2);
     }
     @media (max-width: 48em) {
         & {
