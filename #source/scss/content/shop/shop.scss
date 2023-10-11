@@ -24,6 +24,24 @@
         line-height: 3.35;
         padding: 0 60px;
         text-transform: uppercase;
+        position: relative;
+       
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 1px solid #fff;
+            transition: all .3s;
+        }
+        &:hover:after {
+            top: 10%;
+            left: 5%;
+            bottom: 10%;
+            right: 5%;
+        }
     }
     @media screen and (max-width: 62em) {
         &__body {

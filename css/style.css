@@ -546,6 +546,24 @@ body._active {
   line-height: 3.35;
   padding: 0 60px;
   text-transform: uppercase;
+  position: relative;
+}
+.shop__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.shop__btn:hover:after {
+  top: 10%;
+  left: 5%;
+  bottom: 10%;
+  right: 5%;
 }
 @media screen and (max-width: 62em) {
   .shop__body {
